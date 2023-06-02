@@ -1,0 +1,55 @@
+.createPost {
+   display: flex;
+   padding: 8px;
+   margin-bottom: 25px;
+}
+
+.createPost .left {
+   width: 100px;
+}
+
+.createPost .left img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(60, 60, 60, 0.4);
+}
+
+.createPost .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createPost .right img{
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.createPost .right > textarea {
+    border: none;
+    padding: 5px;
+    outline: none;
+    min-width: 350px;
+    margin-bottom: 10px;
+    letter-spacing: 1.03px;
+    height: 100px;
+}
+
+.file_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.file_button input {
+    display: none;
+}
+
+.file_button label {
+    cursor: pointer;
+   font-size: 2.3rem;
+   margin: 0 8px;
+}
