@@ -20,8 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Proute token={token}><HomePage /></Proute>}></Route>
-            <Route path="/user/me" element={<Proute token={token}><Profile /></Proute>}></Route>
-            <Route path="/user/:id" element={<Proute token={token}><User /></Proute>}></Route>
+            <Route exact path="/user/me" element={<Proute token={token}><Profile /></Proute>}></Route>
+            <Route exact path="/user/:id" element={<Proute token={token}><User /></Proute>}></Route>
             <Route path="/login" element={<Rroute token={token}><LoginPage /></Rroute>}></Route> 
             <Route path="/register" element={<Rroute token={token}><RegisterPage /></Rroute>}></Route>
           </Route>

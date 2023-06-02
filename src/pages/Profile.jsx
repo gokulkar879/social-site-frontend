@@ -28,7 +28,7 @@ function Profile() {
         headers: { 'Authorization': `Bearer ${token}` },
         body: data
        }
-
+       
        fetch('https://social-app-backend-edkz.onrender.com/user/me', requestOptions)
           .then(res => res.json())
           .then(data => {
